@@ -1,17 +1,24 @@
 const hardcodedSounds = [
     { name: "a few moments later", src: "sounds/a-few-moments-later.mp3" },
     { name: "Huh", src: "sounds/Huh.mp3" },
-    { name: "WOW", src: "sounds/Anime-WOW-Sound-Effect.mp3"   }, 
+    { name: "Punch", src: "sounds/punch.mp3" },
+    { name: "Ooff", src: "sounds/Minecraft-Damage-Oof.mp3" },
+    { name: "bruh", src: "sounds/bruh.mp3" },
+    { name: "fart", src: "sounds/bankzitters-fart.mp3" },
+    { name: "WOW", src: "sounds/Anime-WOW-Sound-Effect.mp3" }, 
+    { name: "Error", src: "sounds/error.mp3" }, 
     { name: "running", src: "sounds/Cartoon-Running.mp3" },
     { name: "Crowd aww", src: "sounds/Crowd-Aww.mp3" },
     { name: "Emotional damage", src: "sounds/Emotional-Damage-Sound-Effect.mp3" },
-    { name: "Lijkt te kloppen", src: "sounds/Voicy_Het Lijkt Te Kloppen.mp3" },
-    { name: "Ooff", src: "sounds/Minecraft-Damage-Oof.mp3" },
+    { name: "Sad violin", src: "sounds/sad-violin.mp3" },
     { name: "Apologies", src: "sounds/Apologies.mp3" },
     { name: "Boom", src: "sounds/Vine-boom.mp3" },
     { name: "Herinnering", src: "sounds/Voicy_Herinnering Aan.mp3" },
     { name: "Chapeau", src: "sounds/Voicy_Dus Chapeau.mp3" },
     { name: "Koekje", src: "sounds/watisdezekoekje.mp3" },
+    { name: "Alarm", src: "sounds/alarm.mp3" },
+    { name: "Joehoe", src: "sounds/joehoe.mp3" },
+    { name: "Allemaal onvoldoende", src: "sounds/allemaal_onvoldoende.mp3" },
 ];
 
 function playSound(soundId) {
