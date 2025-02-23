@@ -20,24 +20,20 @@ const hardcodedSounds = [
     { name: "Joehoe", src: "sounds/joehoe.mp3" },
     { name: "Allemaal onvoldoende", src: "sounds/allemaal_onvoldoende.mp3" },
 ];
-
 function playSound(soundId) {
     const sound = document.getElementById(soundId);
     sound.currentTime = 0; // Reset audio to start
     sound.play();
 }
-
 function saveSounds(sounds) {
     localStorage.setItem("soundboard", JSON.stringify(sounds));
 }
-
 function loadSounds() {
     const savedSounds = JSON.parse(localStorage.getItem("soundboard")) || [];
     savedSounds.forEach(({ name, base64 }) => {
         addSoundToBoard(name, base64, false);
     });
 }
-
 function removeSound(name) {
     let savedSounds = JSON.parse(localStorage.getItem("soundboard")) || [];
     savedSounds = savedSounds.filter(sound => sound.name !== name);
@@ -45,7 +41,6 @@ function removeSound(name) {
     document.getElementById(`btn-${name.replace(/\s+/g, '-')}`).remove();
     document.getElementById(`sound-${name.replace(/\s+/g, '-')}`).remove();
 }
-
 function addSoundToBoard(name, src, save = true, isDefault = false) {
     const soundId = `sound-${name.replace(/\s+/g, '-')}`;
     
@@ -80,7 +75,6 @@ function addSoundToBoard(name, src, save = true, isDefault = false) {
         saveSounds(savedSounds);
     }
 }
-
 function addSound() {
     const soundName = document.getElementById("soundName").value;
     const soundFile = document.getElementById("soundFile").files[0];
@@ -96,7 +90,6 @@ function addSound() {
         addSoundToBoard(soundName, event.target.result);
     };
 }
-
 document.addEventListener("DOMContentLoaded", () => {
     hardcodedSounds.forEach(({ name, src }) => {
         addSoundToBoard(name, src, false, true);
