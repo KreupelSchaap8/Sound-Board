@@ -8,6 +8,21 @@
 </head>
 <body>
     <h1>Welkom bij Claudia's soundboard</h1>
+    <div class="section">
+        <h2>Default Sounds</h2>
+        <div class="soundboard" id="defaultSoundboard"></div>
+    </div>
+    
+    <div class="section">
+        <h2>Custom Sounds</h2>
+        <input type="text" id="soundName" placeholder="Enter sound name">
+        <input type="file" id="soundFile" accept="audio/*">
+        <button class ="add-button" onclick="addSound()">Add Sound</button>
+        <div class="soundboard" id="soundboard"></div>
+    </div>
+    <script src="script.js"></script>
+
+    <!-- <h2>Default sounds</h2>
     <div class="sound-buttons-container">
         <button class="sound-button" onclick="playSound('sounds/a-few-moments-later.mp3')">A few moments later</button>
         <button class="sound-button" onclick="playSound('sounds/Anime-WOW-Sound-Effect.mp3')">WOW</button>
@@ -27,5 +42,15 @@
     </div>
     <audio id="audioPlayer" src=""></audio>
     <script src="script.js"></script>
+    <div>
+    <h2>Add my own sounds</h2>
+    <input type="text" id="soundName" placeholder="Enter sound name">
+    <input type="file" id="soundFile" accept="audio/*">
+    <button class="sound-button" onclick="addSound()">Add Sound</button>
+    <br>
+    </div>
+    <div class="soundboard" id="soundboard"></div> -->
+
+
 </body>
 </html>
