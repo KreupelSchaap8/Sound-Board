@@ -6,6 +6,7 @@ const hardcodedSounds = [
     { name: "bruh", src: "sounds/bruh.mp3" },
     { name: "fart", src: "sounds/bankzitters-fart.mp3" },
     { name: "WOW", src: "sounds/Anime-WOW-Sound-Effect.mp3" }, 
+    { name: "Sirene", src: "sounds/sirene.mp3" },
     { name: "Error", src: "sounds/error.mp3" }, 
     { name: "running", src: "sounds/Cartoon-Running.mp3" },
     { name: "Crowd aww", src: "sounds/Crowd-Aww.mp3" },
